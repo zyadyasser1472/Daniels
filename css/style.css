@@ -1,0 +1,680 @@
+/* -----------------------------------------basic------------------------------------- */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.42857143;
+  }
+img {
+    width: 100%;
+    display: block;
+}
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+a {
+    text-decoration: none;
+}
+span {
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6 ,.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* -----------------------------------navbar start------------------------------- */
+.navbar  {
+    margin-bottom: 1.25rem;
+    height: 3.875rem;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-brand {
+    padding-bottom: 0;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #1c1c1c;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #1c1c1c;
+}
+.nav-item {
+    font-size: 14px !important;
+    margin: 0px 20px 0;
+    font-weight: 400 !important;
+    text-transform: capitalize;
+}
+.nav-item a {
+    padding: 0 !important;
+    color: #1c1c1c;
+    position: relative;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #1c1c1c;
+}
+.fa-bars {
+  
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-nav > li > a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.navbar-nav > li .active:after {
+    width: 100%;
+}
+/* -----------------------------------navbar end------------------------------- */
+/* -----------------------------------header start------------------------------- */
+.header {
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../img/bg.jpg);
+    background-position: bottom bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+.header-title {
+    font-size: 3.125rem;
+    font-weight: 800;
+    margin-bottom: .625rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.animated-text {
+    font-size: 3.75rem;
+    color: #fff;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    text-align: center;
+}
+.animated-text span {
+    font-weight: 400;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin-bottom:-19px ;
+    margin-right: -13px;
+}
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+}
+.animated-text span:nth-of-type(1){
+    animation: Larry-Daniels 6s infinite;
+    animation-delay: 1s;
+}
+.animated-text span:nth-of-type(2){
+    animation: Developer 6s infinite;
+    animation-delay: 1s;
+}
+.animated-text span:nth-of-type(3){
+    animation: Designer 6s infinite;
+    animation-delay: 1s;
+}
+@keyframes Larry-Daniels {
+    0% {width: 0%;}
+    16.65%{width: 23.8rem;}
+    25%{width:23.8rem ;}
+    33.3%{width: 0% ;}
+    100%{width: 0%;}
+}
+@keyframes Developer {
+    0% {width: 0%;}
+    36%{width: 0% ;}
+    49.95%{width: 19.2381rem ;}
+    59%{width:19.2381rem ;}
+    66.6% {width: 0%;}
+    100%{width: 0%;}
+}
+@keyframes Designer {
+    0% {width: 0%;}
+    68%{width: 0% ;}
+    83.25%{width: 17.0744rem;}
+    90%{width: 17.0744rem;}
+    100%{width: 0%;}
+}
+.social-icon {
+    margin-top: 1.875rem;
+}
+
+.social-icon a {
+    padding-inline: .3125rem;
+    color: #fff;
+}
+.social-icon a span {
+    text-align: center;
+    font-size: .75rem;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* -----------------------------------header end------------------------------- */
+/* -----------------------------------hero sec start------------------------------- */
+.hero-section {
+    padding: 6.25rem 0 4.375rem;
+}
+.hero-img {
+    padding: 0 0 0 1.875rem;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+.hero-img img{
+   width: 26.7188rem;
+   height: 31.0663rem;
+}
+.hero-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -1.875rem;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.content h2 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: .3125rem;
+    text-transform: capitalize;
+}
+.sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    margin-bottom: 1.25rem;
+}
+.content p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.content p b {
+    font-weight: 700;
+}
+.skills {
+    margin-top: 1.875rem;
+}
+.progress {
+    margin-bottom: 1.875rem;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    background: #f7f7f7;
+    border-radius: 5px;
+    height: 1.4rem;
+}
+.progress-bar {
+    border-radius: .3125rem;
+    background-color: black;
+}
+.width-95 {
+    width: 95%;
+}
+.width-80 {
+    width: 80%;
+}
+.width-90 {
+    width: 90%;
+}
+.progress-title ,.progress-percentage {
+    padding: .25rem  .625rem;
+}
+.btn-about {
+    padding: .625rem 1.875rem;
+    border: 1px solid #1c1c1c;
+    border-radius: .3125rem;
+    font-size: .8125rem;
+    transition: all 0.5s;
+}
+.buton-bg {
+    background: #1c1c1c;
+    color: #eee;
+}
+.buton {
+    color: #343434;
+}
+.buton:hover {
+    background: #1c1c1c !important;
+    color: #eee !important;
+}
+.buton-bg:hover {
+    background: transparent !important;
+    color: #343434 !important;
+}
+/* ---------------------------------about sec end------------------------ */
+/* ---------------------------------services sec start------------------------ */
+.services-sec {
+    padding: 6.25rem 0 4.375rem;
+    background-color: #f7f7f7;
+}
+.title-service {
+    position: relative;
+    font-weight: 900;
+    font-size: 2.5rem;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+}
+.title-service::after {
+        content: "";
+        width: 100%;
+        height: 1.875rem;
+        background-image: url(../img/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -0.625rem;
+        left: 0;
+        z-index: -1;
+}
+.service-box {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services-sec .row>* {
+    padding-inline: .9375rem;
+    margin-top: var(--bs-gutter-y);
+}
+.services-sec .service-box:hover .icon-circle {
+    background: #1c1c1c;
+    color: #eee;
+}
+.icon-circle {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.title-sm {
+    margin-bottom: .9375rem;
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+.description {
+    word-spacing: 2px;
+    font-size: 14px;
+    color: #748182;
+    margin: 0;
+}
+/* ---------------------------------services sec end------------------------ */
+/* ---------------------------------works sec start------------------------ */
+.works-sec {
+    padding: 6.25rem 0 4.375rem;
+}
+.mb-50 {
+    margin-bottom: 3.125rem;
+}
+ .nav-pills .nav-item :before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.nav-pills li .active:before {
+    width: 95%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #111;
+    background-color: transparent;
+}
+.nav-pills .nav-item .nav-link {
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.img-wrapper {
+    position: relative;
+}
+ .overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+    transform: translateY(10px);
+}
+.img-wrapper:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+.small-title {
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: .9375rem;
+    transform: translateY(-15px);
+    transition: all 0.5s;
+}
+.img-wrapper:hover .small-title {
+    transform: translateY(0);
+}
+.icon i , .icon-link i {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    line-height: 1.75rem;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+.icon-link i:hover {
+    background: transparent;
+    color: #000;
+}
+.icon i:hover {
+    background: transparent;
+    color: #000;
+}
+/* -------------------------------works sec End----------------------------- */
+/* -------------------------------testimonials sec start----------------------------- */
+.testimonials-sec {
+    padding-block: 6.25rem;
+    background-color: #f7f7f7;
+}
+.carousel-item , .carousel-inner , .slide{
+    width: 59.0625rem;
+}
+.carousel-item img {
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto .9375rem;
+}
+.testimonials-text {
+    line-height: 1.6;
+    margin: 0;
+    font-size: .9375rem;
+    color: #748182;
+    word-spacing: .125rem;
+}
+
+.content-test h6{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.875rem 0 .3125rem;
+    text-transform: capitalize;
+}
+.content-test span {
+    font-size: .75rem;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 1.875rem;
+    text-transform: capitalize;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: .3125rem .4375rem;
+    background: #d6d6d6;
+    display: block;
+    transition: opacity 0.2s ease;
+    border-radius: 1.875rem;
+    border: 0;
+
+}
+.btn-slider:hover {
+    background: #869791;
+    opacity: 1;
+}
+.carousel-indicators {
+    bottom: -2.5rem;
+}
+.carousel-indicators .active {
+    background: #869791;
+}
+/* -------------------------------testimonials sec end----------------------------- */
+/* -------------------------------counter sec start----------------------------- */
+.section-counter {
+    padding: 6.25rem 0 4.375rem;
+}
+.icon-counter {
+    font-size: 1.875rem;
+    margin-bottom: .9375rem;
+}
+.counter {
+    font-weight: 900;
+    margin-bottom: .9375rem;
+    font-size: 1.875rem;
+    font-family:"Montserrat", sans-serif;
+}
+.counter-text {
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+    color: #748182;
+}
+/* -------------------------------counter sec end----------------------------- */
+/* -------------------------------team sec start----------------------------- */
+.team-section {
+    padding-block: 6.25rem;
+    background-color: #f7f7f7;
+}
+.pt-58 {
+    padding-top: 3.6563rem;
+}
+.team-section .col-md-4 {
+    padding-inline: .9375rem;
+}
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(52, 52, 52, .8);
+    margin-bottom: .625rem;
+    border-radius: .375rem .375rem ;
+}
+.card-img-top {
+    border-radius: 0;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+.card-body {
+    padding: 0;
+}
+.card-text {
+    padding: 1.5625rem;
+    color: #fff;
+    text-align: center;
+}
+.card-text * {
+    margin: 0;
+}
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
+}
+.card-text h3 {
+    font-size: 1.5625rem;
+}
+.card-text h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.card-img-wrapper:hover .card-img-top {
+    transform: scale(1.2);
+}
+.card-social-overlay {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.card:hover .card-social-overlay {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+.card-social-overlay .social li a {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-inline: .3125rem;
+}
+.card-social-overlay .social {
+    padding: 0;
+}
+.card-social-overlay .social li a:hover {
+    background: transparent;
+    color: #000;
+}
+/* -------------------------------team sec end----------------------------- */
+/* -------------------------------contact sec start----------------------------- */
+.conatct-section {
+    padding: 6.25rem 0;
+}
+.conatct-section .col-md-12{
+        padding-inline: 7rem;
+}
+.icon-contact {
+    font-size: 1.5625rem;
+    margin-bottom: .9375rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.heading-contact {
+    font-weight: 700;
+    margin-bottom: .625rem;
+    font-size: 1rem;
+}
+.text-contact {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.contact-info:hover .icon-contact {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+.form-control {
+    width: 98%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+
+}
+.conatct-section textarea {
+    height: 100px !important; 
+    max-height: 10rem;
+    max-width: 100%;
+    
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: #f4f4f4;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.btn-form {
+    position: relative;
+    left: 6.25rem;
+    top: .9375rem;
+}
+.btn-form .btn {
+    padding: 10px 40px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #1c1c1c;
+    color: #eee;
+    transition: all 0.5s;
+}
+.btn-form .btn:hover {
+    background: transparent !important;
+    color: #343434 !important;
+  }
+.ms-3 {
+    margin-left: 25px !important;
+}
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+}
+
+/* -------------------------------contact sec end----------------------------- */
