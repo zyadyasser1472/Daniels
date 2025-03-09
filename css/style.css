@@ -635,6 +635,7 @@ ul {
     height: 100px !important; 
     max-height: 10rem;
     max-width: 100%;
+    width: 100%;
     
 }
 .form-control:focus {
