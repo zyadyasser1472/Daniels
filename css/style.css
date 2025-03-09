@@ -70,9 +70,7 @@ ul {
 .nav-link:focus, .nav-link:hover {
     color: #1c1c1c;
 }
-.fa-bars {
-  
-}
+
 .navbar-toggler {
     border: none;
 }
